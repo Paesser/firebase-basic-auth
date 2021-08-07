@@ -1,0 +1,117 @@
+body{
+    
+    background-image: url("453.png");
+}
+.form{
+    
+    padding: 30px;
+    background-color: #444e;
+    box-shadow: 0px 2px 4px;
+    width: 396px;
+    height: 90.5%;
+    position: absolute;
+    top: 0px;
+    left: -455px;
+    border-top-left-radius: 0px;
+    transition-property: all;
+    transition-duration: 0.7s;
+
+    
+}
+input{
+    
+    margin-top: 10px;
+    box-shadow: 0px 3px 4px inset;
+    display: block;
+    width: 100%;
+    border-style: none;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+button{
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0px 2px 4px black;
+    border-style: none;
+    height: 50px;
+    font-size: 20px;
+    background-color: #00344533;
+    color: dimgrey;
+    
+        
+}
+::placeholder{
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+    font-size: 20px;
+}
+body{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.id{
+    
+    margin-top: 50%;
+}
+button:active{
+    background-color: #00344533;
+     box-shadow: 0px 1px 2px black;
+    color: black;
+  
+}
+button:visited{
+    
+    box-shadow: 0px 3px 3px  inset;
+}
+.form:hover{
+    left: 0px;
+     background-color: #333;
+    
+    
+}
+@keyframes motion{
+    from{
+        left: -450px;
+    }
+    to{
+        0px
+    }
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 2px 3px;
+    
+
+}
+
+.logout{
+	width: 100px;
+	position: absolute;
+	right: 0px;
+	top: -10px;
+	z-index: 5;
+	background-color: #003445;
+	color: white;
+	display: none;
+}
+
+p{
+	
+position: absolute;
+	right: 50%;
+	top: 40px;
+	font-size: 18px;
+	font-weight: 100;
+	font-family: sans-serif;
+}
