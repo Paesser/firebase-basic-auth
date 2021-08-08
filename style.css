@@ -13,13 +13,12 @@ body{
     background-color: #444;
     box-shadow: 0px 2px 4px;
     width: 396px;
-    height: 90.5%;
-    position: absolute;
-    top: 0px;
-    left: 10px;
+    height: 500;
     border-top-left-radius: 0px;
     transition-property: all;
     transition-duration: 0.7s;
+	font-family: alba;	
+	margin: auto;
 
     
 }
@@ -33,6 +32,8 @@ input{
     height: 50px;
     font-size: 20px;
     text-align: center;
+	font-family: alba;	
+	border-radius: 1px;
     
 }
 button{
@@ -44,6 +45,8 @@ button{
     font-size: 20px;
     background-color: #00344533;
     color: dimgrey;
+	font-family: alba;
+	border-radius: 1px;
     
         
 }
@@ -55,6 +58,7 @@ button{
 }
 body{
     text-align: center;
+	font-family: alba;	
     
 }
 .id{
@@ -72,8 +76,11 @@ button:visited{
     box-shadow: 0px 3px 3px  inset;
 }
 .form:hover{
-    left: 0px;
-     background-color: #333;
+    
+ 	box-shadow: 0px 20px 30px black;
+	background-color: #333;
+	border-radius: 10px;
+	
     
     
 }
@@ -87,12 +94,10 @@ button:visited{
 }
 .navbar{
     height: 50px;
-    width: 100%;
     background-color: #333;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+ 	margin-top: auto;
     box-shadow: 0px 2px 3px;
+	display: block;
     
 
 }
@@ -118,16 +123,17 @@ p{
 .logo{
 	position: absolute;
 	top: 90px;
-	left: 190px;
+
 	height: 100px;
 	width: 100px;
 	background-color: black;
 	background-image: url('nexan.png');
 	background-size: cover;
 	border-radius: 100%;
-	animation-name: rot;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
+	box-shadow: 0px 5px 10px inset black;
+	border-style:solid;
+	border-color: #444;
+	border-width: 20px;
 	
 }
 @keyframes rot{
@@ -151,5 +157,14 @@ p{
 .form h4{
 	color: #eeeeff;
 	text-align: center;
-	font-family: alba;	
+	font-family: alba;
+	  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+}
+
+.logo:hover{
+	
+	animation-name: rot;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	
 }
