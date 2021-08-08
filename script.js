@@ -12,12 +12,16 @@ function signup(){
     // ...
        document.getElementById("reg").style.display="none";
 		document.getElementById("logout").style.display="none";
+		
+		 document.getElementById('toast').innerHTML= "registered as: <br>"+user.email;
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
     // ..
-         console.log("error")
+         document.getElementById('toast').innerHTML= errorMessage;
+	
+		
   });
     
 }
@@ -32,14 +36,18 @@ function login(){
   .then((userCredential) => {
     // Signed in
     var user = userCredential.user;
+		document.getElementById('toast').innerHTML= "login success";
 		document.getElementById("form").style.display="none";
 		document.getElementById("logout").style.display="block";
-		document.getElementById("pTag").innerHTML=email;
+		document.getElementById("pTag").innerHTML="welcome "+user.email;
+	
     // ...
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
+		
+		document.getElementById('toast').innerHTML= errorMessage;
 		
 		console.log("error")
   });
