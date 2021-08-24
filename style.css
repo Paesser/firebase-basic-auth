@@ -1,170 +1,87 @@
-
-@font-face{
-	font-family: alba;
-	src: url(alby.ttf)
-}
 body{
-    
-    background-image: url("453.png");
-}
-.form{
-    
-    padding: 30px;
-    background-color: #444;
-    box-shadow: 0px 2px 4px;
-    width: 396px;
-    height: 500;
-    border-top-left-radius: 0px;
-    transition-property: all;
-    transition-duration: 0.7s;
-	font-family: alba;	
-	margin: auto;
-
-    
-}
-input{
-    
-    margin-top: 10px;
-    box-shadow: 0px 3px 4px inset;
-    display: block;
-    width: 100%;
-    border-style: none;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-	font-family: alba;	
-	border-radius: 1px;
-    
-}
-button{
-    margin-top: 10px;
-    width: 100%;
-    box-shadow: 0px 2px 4px black;
-    border-style: none;
-    height: 50px;
-    font-size: 20px;
-    background-color: #00344533;
-    color: dimgrey;
-	font-family: alba;
-	border-radius: 1px;
-    
-        
-}
-::placeholder{
-    text-align: center;
-    font-size: 12px;
-    color: grey;
-    font-size: 20px;
-}
-body{
-    text-align: center;
-	font-family: alba;	
-    
-}
-.id{
-    
-    margin-top: 50%;
-}
-button:active{
-    background-color: #00344533;
-     box-shadow: 0px 1px 2px black;
-    color: black;
-  
-}
-button:visited{
-    
-    box-shadow: 0px 3px 3px  inset;
-}
-.form:hover{
-    
- 	box-shadow: 0px 20px 30px black;
-	background-color: #333;
-	border-radius: 10px;
 	
-    
-    
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	
 }
-@keyframes motion{
-    from{
-        left: -450px;
-    }
-    to{
-        0px
-    }
+
+.side{
+	
+	box-shadow: 0px 3px 5px #22005588;;
+	width: 200px;
+	padding: 10px;
+	display: flex;
+	align-content: space-around;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 3px;
+	height: 300px;
+	justify-items: baseline;
+	background-color: white;
+	
 }
-.navbar{
-    height: 50px;
-    background-color: #333;
- 	margin-top: auto;
-    box-shadow: 0px 2px 3px;
+
+.side input{
+	
 	display: block;
-    
+	margin-top: 20px;
 
 }
-.logout{
-	width: 100px;
-	position: absolute;
-	right: 10px;
-	top: -10px;
-	z-index: 5;
-	background-color: #003445;
-	color: white;
-	display: none;
-	font-family: alba;
-	font-size: 16
-	
-}
-p{
-	margin-top: 80px;
-	font-size: 18px;
-	font-weight: 100;
-	font-family: alba;
-}
-.logo{
-	position: absolute;
-	top: 90px;
 
-	height: 100px;
-	width: 100px;
-	background-color: black;
-	background-image: url('nexan.png');
-	background-size: cover;
-	border-radius: 100%;
-	box-shadow: 0px 5px 10px inset black;
-	border-style:solid;
-	border-color: #444;
-	border-width: 20px;
+.side input[type="text"], [type="email"],[type="password"]{
 	
-}
-@keyframes rot{
-	0%{
-		transform: rotate(0deg);
-		
-	}
-	
-	50%{
-		transform: rotate(180deg);
-			
-	}
-	75%{
-		transform: rotate(270deg);
-	}
-	100%{
-		transform: rotate(360deg);
-	}
-	
-}
-.form h4{
-	color: #eeeeff;
+	display: block;
+	margin-top: 20px;
+	border-style: none;
+	border-bottom: solid #aa00ff22;
 	text-align: center;
-	font-family: alba;
-	  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+
 }
 
-.logo:hover{
+.side input[type="text"]:focus{
+	box-shadow: 0px 2px 3px  gray inset;
+	display: block;
+	margin-top: 20px;
+	border-style: none;
 	
-	animation-name: rot;
-	animation-duration: 8s;
-	animation-iteration-count: infinite;
+
+}
+
+.side input[type="button"]{
+	margin-top: 50px;
+	color: white;
+	background-color: blueviolet;
+	border-style: none;
+	width: 170px;
+	padding: 5px;
+	box-shadow: 0px 2px 3px #44009988;
 	
+}
+
+::placeholder{
+	text-align: center;
+	color: #44004499;
+}
+
+.logout{
+	
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	color: white;
+	background-color: blueviolet;
+	border-style: none;
+	width: 100px;
+	padding: 5px;
+	box-shadow: 0px 2px 3px #44009988;
+	border-radius: 50px 0px 0px 50px;
+}
+
+.side p{
+	
+	margin-top: 20px;
 }

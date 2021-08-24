@@ -1,11 +1,14 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyCdRZ3GnDdbbkF6LZKxVFVxRA9IqN77_7I",
-    authDomain: "emaily-ba943.firebaseapp.com",
-    projectId: "emaily-ba943",
-    storageBucket: "emaily-ba943.appspot.com",
-    messagingSenderId: "496622593966",
-    appId: "1:496622593966:web:fe268a2aa6b2f30a29ca3f",
-    measurementId: "G-8W9WZFKEQS"
+ // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-iqk_MDjb9AyIXRjJ6-GM85UZi_08LQo",
+    authDomain: "bonkeh.firebaseapp.com",
+    databaseURL: "https://bonkeh-default-rtdb.firebaseio.com",
+    projectId: "bonkeh",
+    storageBucket: "bonkeh.appspot.com",
+    messagingSenderId: "514587223259",
+    appId: "1:514587223259:web:5e4adf322437f87e6d58fe",
+    measurementId: "G-E4C7SWRB14"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
